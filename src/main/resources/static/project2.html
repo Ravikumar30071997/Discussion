@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+    <style>="background-color:blue"></style>
+    
+    </head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.ajax({
+		url: "http://localhost:8080/dianosticdb",
+		success: function(result){
+            $("#div1").html(result);
+        }});
+    });
+});
+</script>
+<body>
+Enter EmailId:
+
+<input type="text" name="Enter EmailId" id="1000"value=""><br>
+Enter TestName:<br>
+<input type="checkbox" name="" value="">ECG<br>
+  <input type="checkbox" name="" value="">BloodGroup<br>
+  <input type="checkbox" name=""values="">HBAlc<br>
+  <input type="checkbox" name=""values="">Bone Densitometry<br>
+  <input type="checkbox" name=""values="">MRI scanning<br>
+<button>submit</button>	    <script>
+ <input type="submit" value="submit"onclick="alert('Test details added successfully')"/>
+
+	    <br>
+ <br>
+
+</body>
+</html>

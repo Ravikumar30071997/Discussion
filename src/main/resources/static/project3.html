@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<body>
+<body style="background-color:powderblue;">
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.ajax({
+		url: "http://localhost:8080/dianosticdb",
+		success: function(result){
+            $("#div1").html(result);
+        }});
+    });
+});
+</script>
+Enter PhoneNumber: 
+<br>
+<input type="text" name="Enter Phone number" value=""><br>
+Enter TestName:<br>
+<input type="checkbox" name="" value="">ECG<br>
+  <input type="checkbox" name="" value="">BloodGroup<br>
+  <input type="checkbox" name=""values="">HBAlc<br>
+  <input type="checkbox" name=""values="">Bone Densitometry<br>
+  <input type="checkbox" name=""values="">MRI scanning<br>
+  
+	    <input type="submit" value="submit"onclick="alert('Test details added successfully')"/>
+	    <script>
+
+	    <br>
+ <br>
+  <br>
+</body>
+</html>
