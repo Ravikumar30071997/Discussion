@@ -121,5 +121,6 @@ public class DiagnosticSystemClient
 			System.out.println("\t"+report.get(i).getName()+"\t"+report.get(i).getCost());
 		}
 		System.out.println("\tTotal\t"+Cost);
+		System.out.println("test");
 	}
 }
